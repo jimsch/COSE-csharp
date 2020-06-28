@@ -8,9 +8,13 @@
     <Version>1.6.0</Version>
     <Authors>Jim Schaad</Authors>
     <Description>An implementation of the CBOR Object Signing and Encryption standards.</Description>
+    <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright @2016-9 Jim Schaad</Copyright>
+    <Copyright>Copyright @2016-20 Jim Schaad</Copyright>
     <PackageTags>COSE CBOR</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     
     <PackageReleaseNotes>
 1.6.0
@@ -73,7 +77,10 @@
     <DefineConstants>TRACE;DEBUG;NETSTANDARD1_0;FOR_EXAMPLES</DefineConstants>
     <DefineConstants>TRACE;DEBUG;NETSTANDARD1_0; FOR_EXAMPLES</DefineConstants>
   </PropertyGroup>
-  
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="PeterO.Cbor" Version="4.0.0" />
